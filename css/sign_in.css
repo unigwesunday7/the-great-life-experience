@@ -87,11 +87,27 @@ form .input {
     margin-bottom: 15px;
     border: none;
     background-color: #FAD2BC;
-    color: #fff;
+    color: #000;
     font-size: 16px;
 }
 form .input:focus{
     outline: none;
+}
+
+.input_box {
+    position: relative;
+}
+
+.fa {
+    font-size: 20px;
+    padding-top: 8px;
+}
+.eye {
+    position: absolute;
+    color: #000;
+    right: 10px;
+    transform: translate(0, -50%);
+    top: 57%;
 }
 
 .remember {
