@@ -186,6 +186,9 @@ p span {
     .col2 {
         padding: 40px 20px;
     }
+    form {
+        width: 95%;
+    }
     form label, a, p {
         font-size: 15px;
     }
