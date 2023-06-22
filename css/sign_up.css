@@ -73,9 +73,10 @@ form .input_box:focus{
     border-bottom: 1px solid #692B54;
 }
 
-.pass {
+.pass, .pass2 {
     position: relative;
 }
+
 
 .eye {
     position: absolute;

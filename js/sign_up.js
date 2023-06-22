@@ -22,7 +22,7 @@ function country_code() {
   }
 
 
-  function togglePW(){
+  function togglePW1(){
     let password = document.getElementById('password');
 
     if(password.getAttribute('type')==='password'){
@@ -33,4 +33,17 @@ function country_code() {
         password.setAttribute('type', 'password');
         document.getElementById('eye').style.color='#000';
     }
+  }
+
+    function togglePW2(){
+      let password = document.getElementById('password2');
+  
+      if(password.getAttribute('type')==='password'){
+          password.setAttribute('type', 'text');
+          document.getElementById('eye2').style.color='#fff';
+      }
+      else {
+          password.setAttribute('type', 'password');
+          document.getElementById('eye2').style.color='#000';
+      }
 }
