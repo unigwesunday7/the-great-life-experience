@@ -1,3 +1,24 @@
+
+let formInput = doc.getElementById('formInput');
+let form = document.getElementById('signUp');
+
+form.addEventListener('submit', function(event) {
+
+    
+  if (!formInput.value) {
+      message1.innerText = "Please enter values in the fields";
+      event.preventDefault();
+  }
+
+
+});
+
+
+
+
+
+
+
 function country_code() {
     let val = document.getElementById("country").value;
 
@@ -19,7 +40,7 @@ function country_code() {
     else if (val === "uk") {
       document.getElementById ("output").value = "+380";
     }
-  }
+  };
 
 
   function togglePW1(){
@@ -33,9 +54,9 @@ function country_code() {
         password.setAttribute('type', 'password');
         document.getElementById('eye').style.color='#000';
     }
-  }
+  };
 
-    function togglePW2(){
+    function togglePW2() {
       let password = document.getElementById('password2');
   
       if(password.getAttribute('type')==='password'){

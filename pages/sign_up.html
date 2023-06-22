@@ -24,18 +24,20 @@
 
       <div class="col col1">
         <h2>Create account</h2>
-        <form action="">
+        <form action="./home_page.html" id="signUp">
             <div>
                 <label for="firstname">Firstname</label>
-                <input class="input_box" type="text" name="firstname" placeholder="Firstname">
+                <input class="input_box" type="text" name="firstname" placeholder="Firstname" id="formInput">
+                <h3 id="message"></h3>
             </div>
             <div>
                 <label for="lastname">Lastname</label>
-                <input class="input_box" type="text" name="lastname" placeholder="Lastname">
+                <input class="input_box" type="text" name="lastname" placeholder="Lastname" id="formInput">
+                <h3 id="message"></h3>
             </div>
             <div>
                 <label for="country">Country</label>
-                <select class="input_box" id="country" onchange="country_code()">
+                <select class="input_box" id="country formInput" onchange="country_code()">
                     <option class="option" value="select country">select country</option>
                     <option value="ng">&#x1F1F3;&#x1F1EC; Nigeria</option>
                     <option value="gh">&#x1F1EC;&#x1F1ED; Ghana</option>
@@ -43,31 +45,36 @@
                     <option value="sa">&#x1F1F8;&#x1F1E6; South Africa</option>
                     <option value="uk">&#x1F1FA;&#x1F1E6; Ukraine</option>
                 </select>
+                <h3 id="message"></h3>
             </div>
             <div>
               <label for="phone">Phone Number</label>
-              <input class="input_box" type="tel" id="output" placeholder="Phone number" />
+              <input class="input_box" type="tel" id="output formInput" placeholder="Phone number" />
+              <h3 id="message"></h3>
           </div>
             <div>
                 <label for="email">Email Address</label>
-                <input class="input_box" type="email" name="email" placeholder="Email Address" />
-            </div>
+                <input class="input_box" type="email" name="email" placeholder="Email Address"  id="formInput"/>
+                <h3 id="message"></h3>
+              </div>
             <div class="pass">
                 <label for="password">Password</label>
-                <input class="input_box" type="password" name="password" placeholder="Password" id="password" />
+                <input class="input_box" type="password" name="password" placeholder="Password" id="password formInput" />
                 <span class="eye">
                   <i class="fa fa-solid fa-eye" id="eye" onclick="togglePW1()" aria-hidden="true"></i>
                   <!-- <i class="fa fa-solid fa-eye-slash"></i> -->
                 </span>
-            </div>
+                <h3 id="message"></h3>
+              </div>
             <div class="pass2">
                 <label for="password">Confirm Password</label>
-                <input class="input_box" type="password" name="password" placeholder="Confirm Password" id="password2" />
+                <input class="input_box" type="password" name="password" placeholder="Confirm Password" id="password2 formInput" />
                 <span class="eye">
                   <i class="fa fa-solid fa-eye" id="eye2" onclick="togglePW2()" aria-hidden="true"></i>
                   <!-- <i class="fa fa-solid fa-eye-slash"></i> -->
                 </span>
-            </div>
+                <h3 id="message1"></h3>
+              </div>
             <input type="submit" value="Register" />
         </form>
         <p>Have an account? <span><a href="../index.html">Login</a></span></p>

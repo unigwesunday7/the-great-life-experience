@@ -23,6 +23,9 @@ a {
     font-size: small;
     color: #692B54;
 }
+#message1 {
+    text-align: center;
+}
 
 .container {
     width: 85%;
