@@ -73,8 +73,20 @@ form .input_box:focus{
     border-bottom: 1px solid #692B54;
 }
 
-.input_box {
+.pass {
     position: relative;
+}
+
+.eye {
+    position: absolute;
+    color: #000;
+    right: 10px;
+    transform: translate(0, -50%);
+    top: 57%;
+}
+.fa {
+    font-size: 20px;
+    padding-top: 8px;
 }
 
 form  input[type="submit"]{
