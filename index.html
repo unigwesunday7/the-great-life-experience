@@ -4,61 +4,61 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sign in</title>
+    <title>Home</title>
     <!-- Fontawesome CDN -->
     <script src="https://use.fontawesome.com/46b181c364.js"></script>
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
     <!-- ======== Link to CSS file ======== -->
-    <link rel="stylesheet" href="./css/sign_in.css" />
+    <link rel="stylesheet" href="../css/index.css" />
   </head>
   <body>
-    <!-- ======== Hero Section ======== -->
-    <div class="container">
-      <div class="col col1">
-        <div class="logo">
-          <!-- <img src="./assets/images/logo.png" alt="TGLE Logo" /> -->
+
+    <nav>
+        <div class="logo"></div>
+        <div class="navLinks" id="myTopnav">
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+            <a href="./index.html" class="nav-items home">Home</a>
+            <a href="./pages/sign_in.html" class="nav-items">Login</a>
+            <a href="./pages/sign_in.html" class="nav-items">Visit Library</a>
         </div>
-        <div class="description">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum esse
-          blanditiis nam quae dignissimos repellat. Accusantium quia dicta
-          possimus distinctio at quas laborum deserunt mollitia tempore iure
-          nemo, soluta, cupiditate reprehenderit.
-        </div>
-      </div>
+    </nav>
 
-      <!-- ======== Sign in body section ======== -->
-      <div class="col col2">
-        <h2>Sign in</h2>
-        <form action="./pages/home_page.html">
-          <div>
-            <label for="username">Email or Username</label>
-            <input class="input" type="text" id="username" />
-          </div>
+    <div class="banner">
 
-          <div class="input_box">
-            <label for="password">Password</label>
-            <input class="input" type="password" id="password" />
-            <span class="eye">
-            <i class="fa fa-solid fa-eye" id="eye" onclick="togglePW()" aria-hidden="true"></i>
-            <!-- <i class="fa fa-solid fa-eye-slash"></i> -->
-          </span>
-          </div>
-
-          <div class="remember">
-            <div>
-              <input type="checkbox" />
-              <a href="#">Remember me</a>
-            </div>
-            <div>
-              <a href="pages/forgot_password.html">Forgot Password?</a>
-            </div>
-          </div>
-
-          <input type="submit" value="Sign in" />
-        </form>
-        <p>No account yet? <span><a href="pages/sign_up.html">Register</a></p></span>
-      </div>
     </div>
 
-    <script src="./js/sign_in.js"></script>
+    <div class="social-media">
+      <a href="https://kingschat.online/user/pdgreat"><i class="fa fa-instagram"></i></a>
+      <a href="https://www.instagram.com/derickgreatness/"><i class="fa fa-instagram"></i></a>
+      <a href="https://web.facebook.com/pastorderick/"><i class="fa fa-facebook"></i></a>
+      <a href="https://youtube.com/@thegreatlifeexperience1509"><i class="fa fa-youtube"></i></a>
+    </div>
+
+    <div class="hero-section">
+        <h1 class="hero-text">
+            Welcome to the <br/> Great Life Experience
+        </h1>
+        <div class="cta">
+        <a href="./pages/sign_up.html" class="call-to-action">Sign Up</a>
+        <a href="./pages/sign_in.html" class="call-to-action">Sign In</a>
+        </div>
+    </div>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "navLinks") {
+          x.className += " responsive";
+        } else {
+          x.className = "navLinks";
+        }
+      }
+    </script>
   </body>
 </html>

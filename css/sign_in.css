@@ -75,12 +75,11 @@ form label {
     color: #692B54;
 }
 form .input {
+    border: 1px solid #f0f0f0;
     width: 100%;
     padding: 14px 10px;
     border-radius: 5px;
     margin-top: 7px;
-    margin-bottom: 15px;
-    border: none;
     background-color: #FAD2BC;
     color: #000;
     font-size: 12px;
@@ -91,6 +90,21 @@ form .input:focus{
 }
 .input_box {
     position: relative;
+}
+
+.input-control.success .input {
+    border-color: #09c372;
+}
+
+.input-control.error .input {
+    border-color: #ff3860;
+}
+
+.input-control .error {
+    color: #ff3860;
+    font-size: 9px;
+    height: 13px;
+    margin-bottom: 15px;
 }
 
 .fa {

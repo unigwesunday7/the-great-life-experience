@@ -6,8 +6,8 @@ const email = document.getElementById('email');
 const password = document.getElementById('password');
 const password2 = document.getElementById('password2');
 
-form.addEventListener('submit', e => {
-    e.preventDefault();
+form.addEventListener('submit', event => {
+    // event.preventDefault();
 
     validateInputs();
 });
@@ -38,7 +38,7 @@ const isValidEmail = email => {
 }
 
 const validateInputs = () => {
-  const usernameValue = fullnames.value.trim();
+  const usernameValue = fullnames.value;
   const countryValue = country.value.trim();
   const phoneValue = phone.value.trim();
   const emailValue = email.value.trim();

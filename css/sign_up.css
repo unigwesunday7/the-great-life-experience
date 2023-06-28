@@ -63,7 +63,6 @@ form .input_box {
     padding: 14px 10px;
     border-radius: 5px;
     margin-top: 7px;
-    margin-bottom: 15px;
     background-color: #FAD2BC;
     color: #000;
     font-size: 12px;
@@ -85,6 +84,7 @@ form .input_box:focus{
     color: #ff3860;
     font-size: 9px;
     height: 13px;
+    margin-bottom: 15px;
 }
 
 .pass, .pass2 {

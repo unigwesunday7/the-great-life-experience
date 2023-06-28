@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins';
+}
+
+body {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    /* height: 100vh; */
+    background-color: #fff;
+}
+a, .fa {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+nav {
+    width: 100%;
+    background-color: #692B54;
+    padding: 7px 60px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo {
+    width: 70px;
+    height: 70px;
+    background: url(../assets/images/logo.png) no-repeat center;
+    background-size: contain;
+    /* border-radius: 100px; */
+}
+.search-box {
+    position: relative;
+}
+nav .search-box .search-input {
+    width: 450px;
+    padding: 8px 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    border: none;
+    color: #692B54;
+}
+.search-box .search-input:focus {
+    outline: none;
+}
+
+.searchIcon {
+    position: absolute;
+    color: #692B54;
+    right: 10px;
+    transform: translate(0, -50%);
+    top: 50%;
+}
+.bell {
+    color: #fff;
+}
+
+.videoComponent {
+    width: 100%;
+    padding: 10px 120px;
+    margin: auto;
+}
+
+.videoHeader {
+    width: 100%;
+    padding: 20px 0;
+    color: #692B54;
+}
+.videoSection {
+    width: 100%;
+    max-width: 1440px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* grid-template-rows: 1fr 1fr; */
+    /* margin: auto; */
+    /* padding: 0px 100px; */
+    justify-content: center;
+    align-items: center;
+    gap: 40px;  
+}
+
+.videoCard {
+    /* overflow: hidden; */
+}
+
+.videoThumbnail {
+    width: 250px;
+    height: 250px;
+    background-color: #692B54;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+.videoThumbnail:hover{
+    opacity: 0.5;
+}
+.videoTitle a {
+    text-decoration: none;
+    color: #692B54;
+    /* text-align: center; */
+    font-weight: bold;
+}
+.videoTitle a:hover {
+    text-decoration: underline;
+}
