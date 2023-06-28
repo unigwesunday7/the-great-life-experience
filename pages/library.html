@@ -7,6 +7,10 @@
     <title>Library</title>
     <!-- Fontawesome CDN -->
     <script src="https://use.fontawesome.com/46b181c364.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <!-- ======== Link to CSS file ======== -->
     <link rel="stylesheet" href="../css/library.css" />
   </head>
@@ -16,12 +20,10 @@
             <div class="logo">
                 <!-- <img src="../assets/images/logo.png" alt=""> -->
             </div>
-        <div class="search-box">
-            <input class="search-input" type="search" placeholder="Search for videos" />
-            <span class="searchIcon">
-                <a href="#"><i class="fa fa-solid fa-search" id="searchIcon"></i></a>
-            </span>
-        </div>
+        <form class="search-box">
+            <input type="search" placeholder="Search for videos" />
+            <i class="fa fa-solid fa-search" id="searchIcon"></i>
+        </form>
         <div class="notification">
             <a href="#" class="bell"><i class="fa fa-solid fa-bell" id="bell"></i></a>
         </div>
