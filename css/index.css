@@ -220,14 +220,21 @@ nav .icon {
     }
 
     .social-media {
-        position: absolute;
-        top: 130px;
-        right: 25px;
+        gap: 0px;
+        top: 95px;
+        right: 20px;
+        padding: 0px;
+        border: none;
     }
-    .social-media a {
-        font-size: 14px;
-        padding: 4px 5px;
-        margin-bottom:2px;
+    
+    .social-media img {
+        width: 25px;
+        height:25px;
+    }
+    
+    .social-media .fa-brands {
+        font-size: 15px;
+        margin: 0;
     }
 
     .hero-text {
