@@ -215,7 +215,8 @@ p span {
     }
 
     h2 {
-        font-size: 1.2rem;
+        font-size: 1rem;
+        line-height: 1em;
     }
 
     form {
@@ -257,6 +258,10 @@ p span {
         padding: 10px;
         font-size: 10px;
     }
+
+    .col2 {
+        gap: 10px;
+    }
 }
 
 
@@ -278,7 +283,32 @@ p span {
     div. .col .col2 {
         padding: 40px 0;
     }
-    .col2 form a, p{
+    .col2 form label, a, p {
         font-size: 10px;
     }
+
+    form .input {
+        font-size: 10px;
+        padding: 8px 7px;
+    }
+    .input-control .error {
+        margin-bottom: 5px;
+        font-size: 5px;
+    }
+    form input[type="submit"] {
+        padding: 8px 7px;
+        font-size: 10px;
+    }
+
+    .remember {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 200px) {
+    
+    .col2 form label, a, p {
+        font-size: 7px;
+    }
+    
 }
