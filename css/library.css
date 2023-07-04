@@ -9,7 +9,7 @@
 
 body {
     width: 100%;
-    max-width: 2000px;
+    max-width: 2600px;
     margin: 0 auto;
     background-color: #fff;
 }
@@ -17,7 +17,7 @@ body {
 nav {
     width: 100%;
     background-color: #692B54;
-    padding: 7px 60px;
+    padding: 7px 5%;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -47,6 +47,9 @@ nav .search-box input {
     border: none;
     color: #692B54;
 }
+nav .search-box input::placeholder {
+    color: #692B54;
+}
 .search-box input:focus {
     outline: none;
     border: none;
@@ -60,29 +63,37 @@ nav .search-box input {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 30px;
+    gap: 15px;
 }
 .notification a {
     color: #FAD2BC;
+    text-decoration: none;
 }
 .notification .profile {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 8px;
-    border: 1px solid #FAD2BC;
-    padding: 3px 12px;
+    background-color: #FAD2BC;
+    padding: 3px 8px;
     border-radius: 50px;
 }
 .notification .profile a {
     text-decoration: none;
     font-size: 14px;
+    color: #692B54;
+}
+.notification .profile .fa-user {
+    font-size: 10px;
     color: #FAD2BC;
+    padding: 5px;
+    border-radius: 100px;
+    background-color: #692B54;
 }
 
 .videoComponent {
     width: 100%;
-    padding: 10px 80px;
+    padding: 10px 5%;
 }
 
 .videoHeader {
@@ -93,11 +104,10 @@ nav .search-box input {
 .videoSection {
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 25% 25% 25% 25%;
     justify-items: center;
     align-items: center;
-    gap: 20px;  
+    row-gap: 20px;
 }
 .videoCard {
     box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.08);
@@ -119,6 +129,7 @@ nav .search-box input {
 }
 .videoThumbnail:hover{
     opacity: 0.5;
+    transform: scale(1.05);
 }
 .videoTitle a {
     text-decoration: none;
@@ -133,157 +144,165 @@ nav .search-box input {
 
 
 /*  ======== Media query for Tablet ======== */
-@media screen and (max-width: 1060px) {
+@media screen and (max-width: 1200px) {
 
-    body {
-        min-width: 1000px;
-    }
     .videoSection {
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        gap: 0px;
     }
 
     }
 
-/*  ======== Media query for Tablet ======== */
-@media screen and (max-width: 768px) {
 
-    body {
-        min-width: 700px;
-        background-color: #fff;
-        position: relative;
+@media screen and (max-width: 920px) {
+
+    .videoSection {
+        grid-template-columns: 1fr 1fr;
     }
+
     nav {
+        position: relative;
         margin: 0 auto;
         padding: 20px 40px;
         display: block;
     }
     .search-box {
         width: 100%;
-        height: 50px;
+        padding: 8px;
 
     }
 
     .notification {
         position: absolute;
-        right: 0px;
-        top: 30px;
-        gap: 8px;
+        right: 40px;
+        top: 38px;
+        gap: 10px;
     }
 
     .notification a {
-        text-decoration: none;
-        margin-right: 40px;
         font-size: 20px;
-        float: right;
-        display: block;
     }
     .notification .profile {
-        gap: 2px;
-        padding: 3px 5px;
+        gap: 8px;
+        padding: 5px 8px;
         font-size: 18px;
         text-align: center;
     }
 
+    }
+
+@media screen and (max-width: 768px) {
+
     .videoComponent {
-     padding: 10px 40px;
+     padding: 10px 10%;
     }
 
     .videoSection {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
         gap: 20px;
     }
 
     .videoThumbnail {
-        /* width: 200px;
-        height: 200px; */
-        margin-bottom: 5px;
+        margin-bottom: 10px;
     }
     .videoTitle a {
-        font-size: 10px;
-        font-weight: bold;
+        font-size: 20px;
+        font-weight: 400;
     }
-      /* }
-      .navLinks {
-        width: 100%;
-        position: absolute;
-        right: 0;
-        top: 0;
-      }
-      .navLinks a {
-        display: none;
-        padding: 15px 10px;
-        color: hsl(240, 100%, 5%);
-        font-size: 1.2rem;
-        font-weight: 600;
-        text-align: center;
-      }
-      .navLinks .home {
-        margin-top: 120px;
-      }
-
-      .banner {
-        width: 100%;
-        height: 245px;
-        background-position: right;
-        background-size: cover;
-    }
-
-      
-
-    .navLinks a.icon {
-        margin-right: 10px;
-        font-size: 40px;
-        float: right;
-        display: block;
-      }
-      .navLinks.responsive {
-        height: 100vh;
-        width: 50%;
-        background-color: #fff;
-        position: absolute;
-        z-index: 2;
-      }
-      .navLinks.responsive .icon {
-        position: absolute;
-        right: 0px;
-        top: 0;
-      }
-      .navLinks.responsive .nav-items {
-        float: none;
-        display: block;
-        text-align: center;
-        margin-bottom: 20px;
-        margin-right: 0;
-        font-size: 22px;
-      } */
 }
 
     /*  ======== Media query for Mobile ======== */
 @media screen and (max-width: 600px) {
-
-    body {
-        min-width: 400px;
+   
+    nav {
+        padding: 20px 20px;
+    } 
+    
+    .notification {
+        position: absolute;
+        right: 20px;
     }
-
-    .videoComponent {
-        padding: 10px 20px;
+    
+    .videoSection {
+        grid-template-columns: 1fr;
        }
    
-       .videoSection {
-           grid-template-columns: 100%;
-           gap: 20px;
-       }
-   
-       .videoThumbnail {
-           width: 350px;
-           height: 350px;
-       }
        .videoTitle a {
-           font-size: 10px;
+           font-size: 20px;
            font-weight: bold;
        }
    
+    }
+
+
+    @media screen and (max-width: 385px) {
+
+        .notification {
+            position: absolute;
+            right: 20px;
+        }
+
+        .videoComponent {
+            padding: 10px 20px;
+           }
+
+           .videoHeader {
+            padding: 12px;
+           }
+        
+           .videoHeader p {
+            font-size: 14px;
+        }
+        .videoHeader h2 {
+            font-size: 16px;
+        }
+
+        .videoTitle a {
+            font-size: 16px;
+            font-weight: 500;
+        }
+        
+    }
+
+
+    @media screen and (max-width: 280px) {
+
+        nav .logo {
+            width: 50px;
+            height: 50px;
+        }
+        .notification {
+            right: 20px;
+            top: 39px;
+        }
+        .notification a {
+            font-size: 10px;
+        }
+        .notification .profile {
+            gap: 2px;
+            padding: 3px 5px;
+        }
+        .notification .profile a {
+            font-size: 10px;
+        }
+
+        .videoComponent {
+            padding: 10px 0px;
+           }
+
+           .videoHeader {
+            padding: 10px;
+           }
+        
+           .videoHeader p {
+            font-size: 12px;
+        }
+        .videoHeader h2 {
+            font-size: 16px;
+        }
+
+        .videoTitle a {
+            font-size: 14px;
+            font-weight: 500;
+        }
+        
     }

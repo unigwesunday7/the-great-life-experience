@@ -3,11 +3,10 @@ const email = document.getElementById('email');
 const password = document.getElementById('password');
 
 form.addEventListener('submit', event => {
-    validateInputs();
-    
-    
-
-    
+    event.preventDefault();
+   if(validateInputs()){
+    location.href = "home_page.html"
+   }
 });
 
 const setError = (element, message) => {
@@ -37,24 +36,34 @@ const setError = (element, message) => {
   const validateInputs = () => {
     const emailValue = email.value.trim();
     const passwordValue = password.value.trim();
-  
+    let status = false;
+    let emailStatus = false;
+    let passStatus = false;
   
     if(emailValue === '') {
-        setError(email, 'Email or Username is required');
+       setError(email, 'Email or Username is required');
     } else if (!isValidEmail(emailValue)) {
         setError(email, 'Provide a valid email address');
-    } else {
+    }else{
         setSuccess(email);
+        emailStatus = true;
     }
+    
   
     if(passwordValue === '') {
         setError(password, 'Password is required');
     } else if (passwordValue.length < 8 ) {
         setError(password, 'Password must be at least 8 character.');
-    } else {
+    }else{
         setSuccess(password);
+        passStatus = true;
     }
-  
+
+
+    if(emailStatus && passStatus){
+        status = true;
+    }
+    return status;
   };
 
 

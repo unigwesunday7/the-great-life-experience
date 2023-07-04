@@ -9,14 +9,14 @@
 
 body {
     width: 100%;
+    max-width: 2600px;
     height: 100vh;
     background-color: #fff;
-    position: relative;
 }
 
 nav {
     width: 100%;
-    padding: 30px 40px;
+    padding: 30px 5%;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -55,6 +55,10 @@ nav .icon {
     display: none;
   }
 
+  section .ban {
+    position: relative;
+  }
+
 .banner {
     width: 100%;
     height: 225px;
@@ -69,12 +73,13 @@ nav .icon {
     justify-content: center;
     gap: 7px;
     position: absolute;
-    top: 140px;
-    right: 32px;
-    z-index: 1;
+    transform: translate(0, -50%);
+    top: 170px;
+    right: 3%;
     padding: 5px;
-    border-right: 2px solid #FAD2BC;
-    overflow: hidden;
+}
+.social-media a:hover {
+    transform: scale(1.2);
 }
 
 .social-media img {
@@ -130,14 +135,8 @@ nav .icon {
 /*  ======== Media query for Tablet ======== */
 @media screen and (max-width: 768px) {
 
-    body {
-        /* padding: 0px 10px; */
-        min-width: 400px;
-        background-color: #fff;
-        position: relative;
-    }
     nav {
-        padding: 20px 20px;
+        padding: 20px 5%;
         display: block;
       }
       .navLinks {
@@ -165,7 +164,12 @@ nav .icon {
         background-size: cover;
     }
 
-      
+    .hero-section {
+        padding: 5%;
+    }
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
 
     .navLinks a.icon {
         margin-right: 10px;
@@ -201,35 +205,57 @@ nav .icon {
     }
 }
 
-    /*  ======== Media query for Mobile ======== */
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 712px) {
 
-    body {
-        min-width: 350px;
+    .banner {
+        height: 230px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .banner {
+        height: 150px;
+    }
+
+    .hero-section h1 {
+        font-size: 1.8rem;
     }
     nav .logo {
-        width: 45px;
-        height: 45px;
+        width: 28px;
+        height: 28px;
+    }
+    .social-media {
+        top: 115px;
+    }
+    .call-to-action {
+        font-size: 0.9rem;
+        font-weight: 400;
+    }
+}
+
+    /*  ======== Media query for Mobile ======== */
+@media screen and (max-width: 500px) {
+
+    nav .logo {
+        width: 30px;
+        height: 30px;
     }
 
     .banner {
         width: 100%;
-        height: 140px;
+        height: 115px;
         background-position: right;
         background-size: cover;
     }
 
     .social-media {
-        gap: 0px;
-        top: 95px;
-        right: 20px;
-        padding: 0px;
-        border: none;
+        top: 17;
     }
     
     .social-media img {
-        width: 25px;
-        height:25px;
+        width: 30px;
+        height:30px;
     }
     
     .social-media .fa-brands {
@@ -237,14 +263,13 @@ nav .icon {
         margin: 0;
     }
 
-    .hero-text {
-        font-size: 2em;
-        line-height: 1em;
+    .hero-section h1 {
+        font-size: 1.8rem;
     }
     
     .call-to-action {
-        font-size: 1.2em;
-        padding: 12px 30px;
+        font-size: 1rem;
+        font-weight: 400;
     }
 
     .navLinks a.icon {
@@ -253,4 +278,58 @@ nav .icon {
       .navLinks.responsive {
         width: 100%;
       }
+    }
+
+
+    @media screen and (max-width: 350px) {
+
+        nav {
+            padding: 10px 2%;
+        }
+        nav .logo {
+            width: 20px;
+            height: 20px;
+        }
+
+        .social-media {
+            top: 80px;
+        }
+
+        .hero-section {
+            padding: 5% 0;
+        }
+
+        .hero-section .hero-text {
+            font-size: 1rem;
+        }
+        .cta {
+            gap: 10px;
+        }
+        .call-to-action {
+            font-size: 0.7rem;
+            padding: 3px 8px;
+            font-weight: 400;
+        };
+
+    }
+
+
+    @media screen and (max-width: 280px) {
+    
+        .banner {
+            height: 85px;
+        }
+    
+        .social-media {
+            top: 70px;
+        }
+        
+        .social-media img {
+            width: 20px;
+            height:20px;
+        }
+        .call-to-action {
+            font-size: 0.7rem;
+            padding: 3px 8px;
+        };
     }

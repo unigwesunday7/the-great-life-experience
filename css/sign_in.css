@@ -8,7 +8,9 @@
 }
 body {
     width: 100%;
+    max-width: 2100px;
     height: 100vh;
+    margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -81,7 +83,7 @@ form .input {
     border-radius: 5px;
     margin-top: 7px;
     background-color: #FAD2BC;
-    color: #000;
+    color: #692B54;
     font-size: 12px;
 }
 form .input:focus{
@@ -104,11 +106,11 @@ form .input:focus{
     color: #ff3860;
     font-size: 9px;
     height: 13px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .fa {
-    font-size: 20px;
+    font-size: 14px;
     padding-top: 8px;
 }
 .eye {
@@ -146,27 +148,70 @@ p span {
 }
 
 
-/*  ======== Media query for Tablet ======== */
-@media screen and (max-width: 768px) {
+
+@media screen and (max-width: 1440px) {
 
     body {
-        /* padding: 0px 10px; */
-        min-width: 706px;
-        background-color: #fff;
+        margin: 0;
     }
 
     .container {
         width: 100%;
-        height: 100%;
-        display: block;
     }
+    .logo {
+        height: 200px;
+    }
+    .col {
+        padding: 14%;
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+
+    .container {
+        height: 100vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .col {
+        padding: 7% 10%;
+    }
+    .col1 .description{
+        padding: 10px 100px;
+        font-size: 1rem;
+        text-align: center;
+    }
+    .col2 form {
+        width: 70%;
+    }
+    
+}
+
+
+@media screen and (max-width: 800px) {
+
+    .col1 .description{
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    .col2 form {
+        width: 80%;
+    }
+}
+
+
+/*  ======== Media query for Tablet ======== */
+@media screen and (max-width: 768px) {
 
     .col1 {
-        padding: 80px 120px;
+        padding: 10%;
     }
 
-    .description {
-    font-size: 13px;
+    .col1 .description {
+    font-size: 14px;
+    padding: 10px 60px;
     }
 
     h2 {
@@ -182,29 +227,58 @@ p span {
     }
     
     form .input {
-        padding: 18px 12px;
         font-size: 13px;
+        margin: 0px;
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+
+    .logo {
+        height: 180px;
+    }
+    .col {
+        padding: 8%;
+    }
+    .col2 form {
+        width: 100%;
     }
 }
 
 /*  ======== Media query for Mobile ======== */
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 500px) {
 
-    body {
-        min-width: 350px;
-    }
-
-    .col1 {
-        padding: 40px 10px;
-    }
-    .col2 {
-        padding: 40px 20px;
-    }
-    form {
-        width: 95%;
-    }
-    form label, a, p {
-        font-size: 15px;
+    .col {
+        padding: 20px 5%;
     }
 
+    .col1 .description {
+        padding: 10px;
+        font-size: 10px;
+    }
+}
+
+
+@media screen and (max-width: 445px) {
+    
+    .logo {
+        height: 100px;
+    }
+
+    .col2 form label, a, p {
+        font-size: 14px;
+    }
+
+}
+
+
+@media screen and (max-width: 380px) {
+
+    div. .col .col2 {
+        padding: 40px 0;
+    }
+    .col2 form a, p{
+        font-size: 10px;
+    }
 }

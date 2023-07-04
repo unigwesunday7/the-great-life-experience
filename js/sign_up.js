@@ -7,9 +7,10 @@ const password = document.getElementById('password');
 const password2 = document.getElementById('password2');
 
 form.addEventListener('submit', event => {
-    // event.preventDefault();
-
-    validateInputs();
+  event.preventDefault();
+ if(validateInputs()){
+  location.href = "home_page.html"
+ }
 });
 
 const setError = (element, message) => {
@@ -44,6 +45,13 @@ const validateInputs = () => {
   const emailValue = email.value.trim();
   const passwordValue = password.value.trim();
   const password2Value = password2.value.trim();
+  let status = false;
+  let fullNameStatus = false;
+  let countryStatus = false;
+  let phoneStatus = false;
+  let emailStatus = false;
+  let passStatus = false;
+  let pass2Status = false;
 
 
   
@@ -51,12 +59,14 @@ const validateInputs = () => {
       setError(fullnames, 'Fullnames are required');
   } else {
       setSuccess(fullnames);
+      fullNameStatus = true;
   }
 
   if(countryValue === 'select country') {
     setError(country, 'Please select country');
   } else {
     setSuccess(country);
+    countryStatus = true;
   }
 
   if(phoneValue === '') {
@@ -64,7 +74,8 @@ const validateInputs = () => {
   } else if (phoneValue.length < 10) {
     setError(phone, 'Phone number must be at least 10 digits.');
   } else {
-  setSuccess(phone);
+    setSuccess(phone);
+    phoneStatus = true;
   }
 
   if(emailValue === '') {
@@ -73,6 +84,7 @@ const validateInputs = () => {
       setError(email, 'Provide a valid email address');
   } else {
       setSuccess(email);
+      emailStatus = true
   }
 
   if(passwordValue === '') {
@@ -81,6 +93,7 @@ const validateInputs = () => {
       setError(password, 'Password must be at least 8 character.');
   } else {
       setSuccess(password);
+      passStatus = true;
   }
 
   if(password2Value === '') {
@@ -89,7 +102,13 @@ const validateInputs = () => {
       setError(password2, "Passwords doesn't match");
   } else {
       setSuccess(password2);
+      pass2Status = true;
   }
+
+  if(fullNameStatus && countryStatus && phoneStatus && emailStatus && passStatus && pass2Status){
+    status = true;
+}
+return status;
 
 };
 
