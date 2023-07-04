@@ -79,7 +79,7 @@ nav .search-box input::placeholder{
 }
 .notification .profile a {
     text-decoration: none;
-    font-size: 14px;
+    font-size: 12px;
     color: #692B54;
 }
 .notification .profile .fa-user {
@@ -93,21 +93,27 @@ nav .search-box input::placeholder{
 .wrapper {
     width: 100%;
     padding: 10px 10%;
+    position: relative;
+    margin-top: 15px;
 }
-
+.back-arrow {
+    position: absolute;
+    left: 80px;
+}
+.back-arrow a {
+    font-size: 40px;
+    color: #692B54;
+}
 .videoWrapper {
     width: 95%;
     margin: 0 auto;
     overflow: hidden;
     border-radius: 20px;
 }
-
 .videoWrapper video {
     width: 100%;
     border-radius: 20px;
 }
-
-
 
 .accordion {
     width: 100%;
@@ -152,28 +158,16 @@ nav .search-box input::placeholder{
     border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
   }
 
-
-/* .videoTitle {
-    padding: 20px;
-    font-size: 1.2em;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    justify-content: space-between;
-    color: #692B54;
-} */
-
 .reactions {
-    padding: 0 20px 20px;
+    padding: 0 2.2rem 20px;
     color: rgb(28, 28, 28);
     border-bottom: 1px solid #692B54;
 }
-
 .reactions .fa {
     transition: .5s;
     font-size: 16px;
 }
 .reactions .fa-heart {
-    margin-left: 20px;
     cursor: pointer;
 }
 .reactions .fa-heart:hover {
@@ -185,7 +179,7 @@ nav .search-box input::placeholder{
     border: none;
     outline: none;
     pointer-events: none;
-    width: 30px;
+    width: 45px;
 }
 
 .comment-wrapper {
