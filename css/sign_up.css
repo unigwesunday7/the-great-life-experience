@@ -253,9 +253,6 @@ p span {
     form label, a, p {
         font-size: 12px;
     }
-    form .input_box {
-        padding: 10px;
-    }
     form input[type="submit"] {
         padding: 10px;
         font-size: 10px;
@@ -272,14 +269,11 @@ p span {
 
 @media screen and (max-width: 300px) {
     
-    .col1 form label, a, p {
-        font-size: 7px;
-    }
     h2 {
         font-size: .9rem;
     }
     form .input_box {
-        padding: 8px 10px;
+        padding: 10px 12px;
     }
     .logo {
         height: 100px;

@@ -11,6 +11,10 @@
    
     <!-- ======== Link to CSS file ======== -->
     <link rel="stylesheet" href="../css/playhead.css" />
+
+    <!-- ======== Link to Javascript file ========= -->
+    <script src="../js/playhead.js" defer></script>
+    
   </head>
   <body>
 
@@ -26,8 +30,8 @@
         </form>
         <div class="notification">
             <div class="profile">
-                <a href="#"><p>E. Okhabu</p></a>
-                <a href="#"><i class="fa fa-solid fa-user" id="user"></i></a>
+                <p>E. Okhabu</p>
+                <i class="fa fa-solid fa-user" id="user"></i>
             </div>
             <a href="/index.html">Logout</a>
             <a href="#"><i class="fa fa-solid fa-bell" id="bell"></i></a>
@@ -41,7 +45,9 @@
         </a>
       </div>
       <div class="videoWrapper">
-        <video src="/assets/videos/atoms_-_8579 (720p).mp4" autoplay controls ></video>
+        <video autoplay controls >
+          <source src="../assets/videos/atoms_-_8579 (720p).mp4" type="video/mp4">
+        </video>
       </div>
       
       <div class="accordion">
@@ -67,7 +73,7 @@
       </div>
 
       <div class="comment-wrapper">
-        <div class="avatar">EO</div>
+        <div class="avatar">AD</div>
         <div class="comment-list">
           <h3 class="userId">Alexa Dakore</h3>
           <p class="comment">Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br> Qui, repellat eum.</p>
@@ -95,6 +101,5 @@
 
 
 
-    <script src="../js/playhead.js" defer></script>
   </body>
 </html>
