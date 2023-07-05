@@ -192,12 +192,8 @@ nav .search-box input::placeholder {
 
 @media screen and (max-width: 768px) {
 
-    body {
-        min-width: 700px;
-    }
-
     .videoComponent {
-     padding: 10px 10%;
+     padding: 10px 5%;
     }
 
     .videoSection {
@@ -216,14 +212,6 @@ nav .search-box input::placeholder {
 
     /*  ======== Media query for Mobile ======== */
 @media screen and (max-width: 600px) {
-
-    body {
-        min-width: 400px;
-    }
-
-    .videoComponent {
-     padding: 10px 20px;
-    }
    
     nav {
         padding: 20px 20px;
@@ -257,10 +245,6 @@ nav .search-box input::placeholder {
             padding: 10px 20px;
            }
 
-           .videoSection {
-            grid-template-columns: 1fr;
-           }
-
            .videoHeader {
             padding: 12px;
            }
@@ -280,7 +264,7 @@ nav .search-box input::placeholder {
     }
 
 
-    /* @media screen and (max-width: 280px) {
+    @media screen and (max-width: 280px) {
 
         nav .logo {
             width: 50px;
@@ -320,5 +304,5 @@ nav .search-box input::placeholder {
             font-size: 14px;
             font-weight: 500;
         }
-         */
-    /* } */
+        
+    }
