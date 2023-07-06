@@ -1,308 +1,285 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800;900&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'poppins';
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins";
 }
 
 body {
-    width: 100%;
-    max-width: 2600px;
-    margin: 0 auto;
-    background-color: #fff;
+  width: 100%;
+  max-width: 2000px;
+  margin: 0 auto;
+  background-color: #fff;
 }
 
 nav {
-    width: 100%;
-    background-color: #692B54;
-    padding: 7px 5%;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  width: 100%;
+  background-color: #692b54;
+  padding: 10px 5%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.3);
 }
 
 nav .logo {
-    width: 70px;
-    height: 70px;
-    background: url(../assets/images/logo.png) no-repeat center;
-    background-size: contain;
+  width: 70px;
+  height: 50px;
+  background: url(../assets/images/logo.png) no-repeat center;
+  background-size: contain;
 }
 .search-box {
-    width: 450px;
-    padding: 8px 10px;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    background-color: #fff;
-    justify-content: center;
+  width: 450px;
+  padding: 8px 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  justify-content: center;
 }
-nav .search-box input {
-    width: 100%;
-    font-size: 14px;
-    border-radius: 5px;
-    background-color: #fff;
-    border: none;
-    color: #692B54;
+.search-box input {
+  width: 100%;
+  font-size: 14px;
+  border-radius: 5px;
+  background-color: #fff;
+  border: none;
+  color: #692b54;
 }
-nav .search-box input::placeholder {
-    color: #692B54;
+.search-box input::placeholder {
+  color: #692b54;
 }
 .search-box input:focus {
-    outline: none;
-    border: none;
+  outline: none;
+  border: none;
 }
 
 .fa .fa-search {
-    color: #692B54;
+  color: #692b54;
 }
 
 .notification {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 .notification a {
-    color: #FAD2BC;
-    text-decoration: none;
+  color: #fad2bc;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 400;
 }
 .notification .profile {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    background-color: #FAD2BC;
-    padding: 3px 8px;
-    border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  background-color: #fad2bc;
+  padding: 3px 5px;
+  border-radius: 50px;
+  cursor: pointer;
 }
-.notification .profile a {
-    text-decoration: none;
-    font-size: 14px;
-    color: #692B54;
+.notification .profile p {
+  font-size: 12px;
+  font-weight: 600;
+  color: #692b54;
+  pointer-events: none;
 }
 .notification .profile .fa-user {
-    font-size: 10px;
-    color: #FAD2BC;
-    padding: 5px;
-    border-radius: 100px;
-    background-color: #692B54;
+  font-size: 10px;
+  color: #fad2bc;
+  padding: 5px;
+  border-radius: 100px;
+  background-color: #692b54;
+  pointer-events: none;
+}
+.mobileSearch {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #692b54;
+  padding: 0 3% 10px;
+  display: none;
+}
+.search-box-mobile {
+  width: 100%;
 }
 
 .videoComponent {
-    width: 100%;
-    padding: 10px 5%;
+  width: 100%;
+  padding: 0px 5% 20px;
 }
 
 .videoHeader {
-    width: 100%;
-    padding: 20px 0;
-    color: #692B54;
+  width: 100%;
+  padding: 20px 0;
+  color: #692b54;
 }
 .videoSection {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    justify-items: center;
-    align-items: center;
-    row-gap: 20px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  align-items: center;
+  gap: 20px;
 }
 .videoCard {
-    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.08);
-    padding: 10px;
+  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.08);
+  aspect-ratio: 1/1;
+  padding-bottom: 5px;
 }
 
 .videoThumbnail {
-    width: 250px;
-    height: 250px;
-    background-color: #692B54;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    transition: 0.7s;
-    overflow: hidden;
+  aspect-ratio: 1/1;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  transition: 0.5s ease-in;
+  overflow: hidden;
 }
 .videoThumbnail img {
-    width: 100%;
-    height: 100%;
+  width: 100%;
 }
-.videoThumbnail:hover{
-    opacity: 0.5;
-    transform: scale(1.05);
+.videoThumbnail:hover {
+  opacity: 0.7;
+  transform: scale(1.05);
 }
 .videoTitle a {
-    text-decoration: none;
-    color: #692B54;
-    text-align: center;
-    font-weight: 500;
-}
-.videoTitle a:hover {
-    text-decoration: underline;
+  text-decoration: none;
+  color: #692b54;
+  text-align: center;
+  font-weight: 600;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
-
+.copyright {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 12px;
+  text-align: center;
+  color: #692b54;
+  border-top: 2px solid;
+  border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
+}
 
 /*  ======== Media query for Tablet ======== */
-@media screen and (max-width: 1200px) {
 
-    .videoSection {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-
-    }
-
-
-@media screen and (max-width: 920px) {
-
-    .videoSection {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    nav {
-        position: relative;
-        margin: 0 auto;
-        padding: 20px 40px;
-        display: block;
-    }
-    .search-box {
-        width: 100%;
-        padding: 8px;
-
-    }
-
-    .notification {
-        position: absolute;
-        right: 40px;
-        top: 38px;
-        gap: 10px;
-    }
-
-    .notification a {
-        font-size: 20px;
-    }
-    .notification .profile {
-        gap: 8px;
-        padding: 5px 8px;
-        font-size: 18px;
-        text-align: center;
-    }
-
-    }
-
-@media screen and (max-width: 768px) {
-
-    .videoComponent {
-     padding: 10px 5%;
-    }
-
-    .videoSection {
-        grid-template-columns: 1fr 1fr;
-        gap: 20px;
-    }
-
-    .videoThumbnail {
-        margin-bottom: 10px;
-    }
-    .videoTitle a {
-        font-size: 20px;
-        font-weight: 400;
-    }
+@media screen and (max-width: 1000px) {
+  nav .search-box {
+    width: 350px;
+  }
+  .notification .fa-bell {
+    font-size: 16px;
+  }
+  .notification .profile {
+    gap: 5px;
+    text-align: center;
+  }
+  .videoTitle a {
+    font-size: 14px;
+  }
 }
 
-    /*  ======== Media query for Mobile ======== */
+@media screen and (max-width: 800px) {
+  nav .search-box {
+    width: 350px;
+  }
+  .videoTitle a {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    padding-bottom: 0;
+  }
+  nav .search-box {
+    display: none;
+  }
+  .mobileSearch {
+    display: block;
+  }
+  .videoSection {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  .videoThumbnail {
+    margin-bottom: 10px;
+  }
+  .videoTitle a {
+    font-size: 14px;
+  }
+}
+
+/*  ======== Media query for Mobile ======== */
 @media screen and (max-width: 600px) {
-   
-    nav {
-        padding: 20px 20px;
-    } 
-    
-    .notification {
-        position: absolute;
-        right: 20px;
-    }
-    
-    .videoSection {
-        grid-template-columns: 1fr;
-       }
-   
-       .videoTitle a {
-           font-size: 20px;
-           font-weight: bold;
-       }
-   
-    }
+  .videoSection {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .videoTitle a {
+    font-weight: 400;
+  }
+}
 
+@media screen and (max-width: 385px) {
+  .notification .profile {
+    gap: 3px;
+  }
+  .notification .profile p {
+    font-size: 10px;
+  }
+  .notification .profile .fa-user {
+    font-size: 10px;
+  }
+  .videoHeader {
+    padding: 12px;
+  }
+  .videoHeader p {
+    font-size: 12px;
+  }
+  .videoHeader h2 {
+    font-size: 18px;
+  }
+  .videoTitle a {
+    font-size: 10px;
+  }
+}
 
-    @media screen and (max-width: 385px) {
+@media screen and (max-width: 291px) {
+  .videoComponent {
+    padding: 0px 10px 20px;
+  }
+  .videoTitle a {
+    font-size: 7px;
+  }
+}
 
-        .notification {
-            position: absolute;
-            right: 20px;
-        }
+@media screen and (max-width: 280px) {
 
-        .videoComponent {
-            padding: 10px 20px;
-           }
+  .notification a {
+    font-size: 10px;
+  }
+  .notification .profile {
+    gap: 2px;
+    padding: 3px 5px;
+  }
+  .notification .profile a {
+    font-size: 10px;
+  }
 
-           .videoHeader {
-            padding: 12px;
-           }
-        
-           .videoHeader p {
-            font-size: 14px;
-        }
-        .videoHeader h2 {
-            font-size: 16px;
-        }
+  .videoHeader {
+    padding: 10px;
+  }
 
-        .videoTitle a {
-            font-size: 16px;
-            font-weight: 500;
-        }
-        
-    }
-
-
-    @media screen and (max-width: 280px) {
-
-        nav .logo {
-            width: 50px;
-            height: 50px;
-        }
-        .notification {
-            right: 20px;
-            top: 39px;
-        }
-        .notification a {
-            font-size: 10px;
-        }
-        .notification .profile {
-            gap: 2px;
-            padding: 3px 5px;
-        }
-        .notification .profile a {
-            font-size: 10px;
-        }
-
-        .videoComponent {
-            padding: 10px 0px;
-           }
-
-           .videoHeader {
-            padding: 10px;
-           }
-        
-           .videoHeader p {
-            font-size: 12px;
-        }
-        .videoHeader h2 {
-            font-size: 16px;
-        }
-
-        .videoTitle a {
-            font-size: 14px;
-            font-weight: 500;
-        }
-        
-    }
+  .videoHeader p {
+    font-size: 10px;
+  }
+  .videoHeader h2 {
+    font-size: 14px;
+  }
+}

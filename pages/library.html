@@ -7,105 +7,126 @@
     <title>Library</title>
 
     <!-- Fontawesome CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-   
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
     <!-- ======== Link to CSS file ======== -->
     <link rel="stylesheet" href="../css/library.css" />
   </head>
   <body>
-
     <nav>
-            <a href="../pages/home_page.html">
-                <div class="logo">
-                 <!-- <img src="../assets/images/logo.png" alt=""> -->
-                </div>
-            </a>
-        <form class="search-box">
-            <input type="search" placeholder="Search for videos" />
-            <i class="fa fa-solid fa-search" id="searchIcon"></i>
-        </form>
-        <div class="notification">
-            <div class="profile">
-                <a href="#"><p>E. Okhabu</p></a>
-                <a href="#"><i class="fa fa-solid fa-user" id="user"></i></a>
-            </div>
-            <a href="/index.html">Logout</a>
-            <a href="#"><i class="fa fa-solid fa-bell" id="bell"></i></a>
+      <a href="../pages/home_page.html">
+        <div class="logo">
+          <!-- <img src="../assets/images/logo.png" alt=""> -->
         </div>
+      </a>
+      <form class="search-box">
+        <input type="search" id="search" placeholder="Search for videos" />
+        <i class="fa fa-solid fa-search" id="searchIcon"></i>
+      </form>
+      <div class="notification">
+        <div class="profile">
+          <p>Okhabu</p>
+          <i class="fa fa-solid fa-user" id="user"></i>
+        </div>
+        <a href="/index.html">Logout</a>
+        <a href="#"><i class="fa fa-solid fa-bell" id="bell"></i></a>
+      </div>
     </nav>
 
-    <section class="videoComponent">
-        <div class="videoHeader">
-            <p>Hello! What are you watching today?</p>
-            <h2>All videos</h2>
-        </div>
-        <div class="videoSection">
-            <div class="videoCard">
-                <a href="./playhead.html"><div class="videoThumbnail">
-                    <img src="../assets/images/cover.jpg" alt="">
-                </div></a>
-                <div class="videoTitle">
-                    <a href="./playhead.html"><p>Financial Dominion</p></a>
-                </div>
-            </div>
-            <div class="videoCard">
-                <a href="./playhead.html"><div class="videoThumbnail">
-                    <img src="../assets/images/cover.jpg" alt="">
-                </div></a>
-                <div class="videoTitle">
-                    <a href="./playhead.html"><p>Walking in Prophecy</p></a>
-                </div>
-            </div>
-            <div class="videoCard">
-                <a href="./playhead.html"><div class="videoThumbnail">
-                    <img src="../assets/images/cover.jpg" alt="">
-                </div></a>
-                <div class="videoTitle">
-                    <a href="./playhead.html"><p>What God Wants</p></a>
-                </div>
-            </div>
-            <div class="videoCard">
-                <a href="./playhead.html"><div class="videoThumbnail">
-                    <img src="../assets/images/cover.jpg" alt="">
-                </div></a>
-                <div class="videoTitle">
-                    <a href="./playhead.html"><p>Righteousness</p></a>
-                </div>
-            </div>
-            <div class="videoCard">
-                <a href="#"><div class="videoThumbnail">
-                    <img src="../assets/images/cover.jpg" alt="">
-                </div></a>
-                <div class="videoTitle">
-                    <a href="#"><p>Kingdom Financiers</p></a>
-                </div>
-            </div>
-            <div class="videoCard">
-                <a href="#"><div class="videoThumbnail">
-                    <img src="../assets/images/cover.jpg" alt="">
-                </div></a>
-                <div class="videoTitle">
-                    <a href="#"><p>A Prolific You</p></a>
-                </div>
-            </div>
-            <div class="videoCard">
-                <a href="#"><div class="videoThumbnail">
-                    <img src="../assets/images/cover.jpg" alt="">
-                </div></a>
-                <div class="videoTitle">
-                    <a href="#"><p>Walking in Dominion</p></a>
-                </div>
-            </div>
-            <div class="videoCard">
-                <a href="#"><div class="videoThumbnail">
-                    <img src="../assets/images/cover.jpg" alt="">
-                </div></a>
-                <div class="videoTitle">
-                    <a href="#"><p>Walking in Dominion</p></a>
-                </div>
-            </div>
-        </div>
+    <section class="mobileSearch">
+        <form class="search-box search-box-mobile">
+            <input type="search" id="search" placeholder="Search for videos" />
+            <i class="fa fa-solid fa-search" id="searchIcon"></i>
+        </form>
     </section>
+
+    <section class="videoComponent">
+      <div class="videoHeader">
+        <p>Hello! What are you watching today?</p>
+        <h2>All videos</h2>
+      </div>
+      <div class="videoSection">
+        <div class="videoCard">
+          <a href="./playhead.html"
+            ><div class="videoThumbnail">
+              <img src="../assets/images/cover.jpg" alt="" /></div
+          ></a>
+          <div class="videoTitle">
+            <a href="./playhead.html"><p>Financial Dominion</p></a>
+          </div>
+        </div>
+        <div class="videoCard">
+          <a href="./playhead.html"
+            ><div class="videoThumbnail">
+              <img src="../assets/images/cover.jpg" alt="" /></div
+          ></a>
+          <div class="videoTitle">
+            <a href="./playhead.html"><p>Walking in Prophecy</p></a>
+          </div>
+        </div>
+        <div class="videoCard">
+          <a href="./playhead.html"
+            ><div class="videoThumbnail">
+              <img src="../assets/images/cover.jpg" alt="" /></div
+          ></a>
+          <div class="videoTitle">
+            <a href="./playhead.html"><p>What God Wants</p></a>
+          </div>
+        </div>
+        <div class="videoCard">
+          <a href="./playhead.html"
+            ><div class="videoThumbnail">
+              <img src="../assets/images/cover.jpg" alt="" /></div
+          ></a>
+          <div class="videoTitle">
+            <a href="./playhead.html"><p>Righteousness</p></a>
+          </div>
+        </div>
+        <div class="videoCard">
+          <a href="#"
+            ><div class="videoThumbnail">
+              <img src="../assets/images/cover.jpg" alt="" /></div
+          ></a>
+          <div class="videoTitle">
+            <a href="#"><p>Kingdom Financiers</p></a>
+          </div>
+        </div>
+        <div class="videoCard">
+          <a href="#"
+            ><div class="videoThumbnail">
+              <img src="../assets/images/cover.jpg" alt="" /></div
+          ></a>
+          <div class="videoTitle">
+            <a href="#"><p>A Prolific You</p></a>
+          </div>
+        </div>
+        <div class="videoCard">
+          <a href="#"
+            ><div class="videoThumbnail">
+              <img src="../assets/images/cover.jpg" alt="" /></div
+          ></a>
+          <div class="videoTitle">
+            <a href="#"><p>Walking in Dominion</p></a>
+          </div>
+        </div>
+        <div class="videoCard">
+          <a href="#"
+            ><div class="videoThumbnail">
+              <img src="../assets/images/cover.jpg" alt="" /></div
+          ></a>
+          <div class="videoTitle">
+            <a href="#"><p>Walking in Dominion</p></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="copyright">
+      <small>Copyright 2023</small>
+    </footer>
 
     <script src="./js/library.js"></script>
   </body>
