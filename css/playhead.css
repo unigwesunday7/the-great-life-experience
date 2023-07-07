@@ -75,8 +75,8 @@ nav .logo {
   border-radius: 100px;
   background-color: #692b54;
 }
-
-.logout, .notifications {
+.logout,
+.notifications {
   display: flex;
   align-items: center;
   gap: 15px;
@@ -86,13 +86,13 @@ nav .logo {
 .notifications {
   margin-top: 100px;
 }
-.notifications:hover, .logout:hover {
+.notifications:hover,
+.logout:hover {
   background-color: #fad2bc;
   color: #692b54;
   transform: scale(1.05);
   transition: 0.4s ease;
 }
-
 
 /* ============== Styling the dropdown ================= */
 .navLinks.responsive {
@@ -112,7 +112,6 @@ nav .logo {
   text-align: center;
   margin-bottom: 20px;
 }
-
 
 .wrapper {
   width: 100%;
@@ -149,7 +148,7 @@ nav .logo {
   margin: 1rem 0;
 }
 .accordion-item-header {
-  padding: 0 3rem 0 1rem;
+  padding: 0 3rem 0 0.5rem;
   min-height: 1.3rem;
   line-height: 0px;
   font-weight: 500;
@@ -266,12 +265,11 @@ nav .logo {
     width: 30%;
   }
   .navLinks.responsive {
-   width: 30%;
+    width: 30%;
   }
 }
 
 @media screen and (max-width: 970px) {
-
   .back-arrow {
     left: 3%;
   }
@@ -285,7 +283,7 @@ nav .logo {
     font-size: 1.6em;
   }
   .reactions {
-    padding: 0 2.2rem 5px;
+    padding: 0 1rem 3px;
   }
   .comment-wrapper {
     gap: 10px;
@@ -319,24 +317,22 @@ nav .logo {
     width: 40%;
   }
   .navLinks.responsive {
-   width: 40%;
+    width: 40%;
   }
   .navLinks .icon {
     margin-right: 15%;
-}
+  }
 }
 @media screen and (max-width: 680px) {
   .navLinks {
     width: 45%;
   }
   .navLinks.responsive {
-   width: 45%;
+    width: 45%;
   }
 }
 
-
 @media screen and (max-width: 600px) {
-
   .navLinks {
     width: 50%;
   }
@@ -348,15 +344,15 @@ nav .logo {
     font-size: 1.5em;
   }
   .accordion-item-body-content {
-    font-size: 14px;
+    font-size: 12px;
+    padding: 12px;
   }
   .notifications {
     margin-top: 70px;
-}
+  }
 }
 
 @media screen and (max-width: 500px) {
-
   .navLinks {
     width: 55%;
   }
@@ -389,7 +385,7 @@ nav .logo {
   }
   .reactions .fa {
     font-size: 14px;
-}
+  }
   .reactions input {
     font-size: 14px;
   }
@@ -447,7 +443,7 @@ nav .logo {
   }
   .navLinks .icon {
     margin-top: 25px;
-}
+  }
   .accordion-item-header h2 {
     font-size: 0.9em;
   }
@@ -471,40 +467,40 @@ nav .logo {
   }
   .back-arrow a {
     font-size: 15px;
-}
-.accordion-item-header h2 {
-  font-size: 0.7em;
-}
-.accordion-item-header::after {
-  font-size: 1.4rem;
-}
-.accordion-item-header {
-  padding: 0 0.5rem 0;
-}
-.accordion-item-body-content {
-  font-size: 10px;
-}
-.reactions {
-  padding: 0 0.5rem 5px;
-}
-.reactions .fa {
-  font-size: 11px;
-}
-.reactions input {
-  font-size: 11px;
-}
-.comment-wrapper .avatar {
-  font-size: 0.8em;
-}
-.comment-wrapper .comment-list h3 {
-  font-size: 12px;
-}
-.comment-wrapper .comment-list {
-  font-size: 10px;
-}
-.comment-box form input {
-  width: 100%;
-  padding: 10px 20px 10px 30px;
-  font-size: 10px;
-}
+  }
+  .accordion-item-header h2 {
+    font-size: 0.7em;
+  }
+  .accordion-item-header::after {
+    font-size: 1.4rem;
+  }
+  .accordion-item-header {
+    padding: 0 0.5rem 0;
+  }
+  .accordion-item-body-content {
+    font-size: 10px;
+  }
+  .reactions {
+    padding: 0 0.5rem 5px;
+  }
+  .reactions .fa {
+    font-size: 11px;
+  }
+  .reactions input {
+    font-size: 11px;
+  }
+  .comment-wrapper .avatar {
+    font-size: 0.8em;
+  }
+  .comment-wrapper .comment-list h3 {
+    font-size: 12px;
+  }
+  .comment-wrapper .comment-list {
+    font-size: 10px;
+  }
+  .comment-box form input {
+    width: 100%;
+    padding: 10px 20px 10px 30px;
+    font-size: 10px;
+  }
 }
