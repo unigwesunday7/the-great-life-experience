@@ -80,7 +80,7 @@ nav .logo {
   display: flex;
   align-items: center;
   gap: 15px;
-  padding: 10px 30px;
+  padding: 10px 20px;
   font-size: 1.3em;
 }
 .notifications {
@@ -480,6 +480,9 @@ nav .logo {
 }
 .accordion-item-header {
   padding: 0 0.5rem 0;
+}
+.accordion-item-body-content {
+  font-size: 10px;
 }
 .reactions {
   padding: 0 0.5rem 5px;
