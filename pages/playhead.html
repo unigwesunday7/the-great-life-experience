@@ -19,20 +19,35 @@
     <script src="../js/playhead.js" defer></script>
   </head>
   <body>
+    <!-- ============================= Navbar Section ===================== -->
     <nav>
-      <a href="../pages/home_page.html">
-        <div class="logo">
-          <!-- <img src="../assets/images/logo.png" alt=""> -->
-        </div>
-      </a>
+      <!-- =========================== Logo ============================== -->
+        <div class="logo"></div>
 
-      <div class="notification">
-        <div class="profile">
-          <p>Okhabu</p>
-          <i class="fa fa-solid fa-user" id="user"></i>
+      <!-- ========================== User Profile ======================== -->
+      <div class="navLinks" id="myTopnav">
+        <div class="icon" onclick="userToggle()">
+          <div class="profile">
+            <p>Emmanuel Okhabu </p>
+            <i class="fa fa-solid fa-user" id="userIcon"></i>
+          </div>
         </div>
-        <a href="/index.html">Logout</a>
-        <a href="#"><i class="fa fa-solid fa-bell" id="bell"></i></a>
+
+        <!-- ========================= Notification ======================== -->
+        <a href="/pages/notification.html" class="nav-items">
+          <div class="notifications">
+            <i class="fa fa-solid fa-bell" id="bell"></i>
+            <p>Notifications</p>
+          </div>
+        </a>
+
+        <!-- ============================ Logout ============================ -->
+        <a href="/index.html" class="nav-items">
+          <div class="logout">
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            <p>Logout</p>
+          </div>
+        </a>
       </div>
     </nav>
 
