@@ -16,7 +16,6 @@
     <link rel="stylesheet" href="../css/playhead.css" />
 
     <!-- ======== Link to Javascript file ========= -->
-    <script src="../js/playhead.js" defer></script>
   </head>
   <body>
     <!-- ============================= Navbar Section ===================== -->
@@ -34,7 +33,7 @@
         </div>
 
         <!-- ========================= Notification ======================== -->
-        <a href="/pages/notification.html" class="nav-items">
+        <a href="../pages/notification.html" class="nav-items">
           <div class="notifications">
             <i class="fa fa-solid fa-bell" id="bell"></i>
             <p>Notifications</p>
@@ -58,7 +57,7 @@
         </a>
       </div>
       <div class="videoWrapper">
-        <video autoplay controls>
+        <video autoplay controls controlsList="nodownload">
           <source
             src="../assets/videos/atoms_-_8579 (720p).mp4"
             type="video/mp4"
@@ -83,10 +82,10 @@
 
       <div class="reactions">
         <i class="fa fa-solid fa-eye"></i>
-        <input type="number" value="0" />
+        <!-- <input type="number" value="0" /> -->
         <!-- <span class="Views">Views</span> -->
-        <i class="fa fa-solid fa-heart"></i>
-        <input type="number" value="0" />
+        <i class="fa fa-light fa-heart"></i>
+        <!-- <input type="number" value="0" /> -->
         <!-- <span class="Views">Likes</span> -->
       </div>
 
@@ -119,5 +118,7 @@
         </form>
       </div>
     </div>
+
+    <script src="../js/playhead.js" defer></script>
   </body>
 </html>
