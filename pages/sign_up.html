@@ -74,8 +74,14 @@
                 </span>
                 <div class="error"></div>
               </div>
-            <input type="submit" value="Register" />
+            <input type="submit" onclick="openPopup()" value="Register" />
         </form>
+        <div class="popup" id="popup">
+          <img src="../assets/images/404-tick.png" alt="">
+          <h2>Thank You!</h2>
+          <p>Your details has been successfully submitted. <br> click <b>OK</b> to continue.</p>
+          <a href="../pages/home_page.html"><button type="button" onclick="closePopup()">OK</button></a>
+        </div>
         <p>Have an account? <span><a href="sign_in.html">Login</a></span></p>
       </div>
       

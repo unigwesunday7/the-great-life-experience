@@ -5,12 +5,31 @@ const phone = document.getElementById('phone');
 const email = document.getElementById('email');
 const password = document.getElementById('password');
 const password2 = document.getElementById('password2');
+const popup = document.getElementById('popup');
 
-form.addEventListener('submit', event => {
+
+// form.addEventListener('submit', event => {
+//   event.preventDefault();
+//  if(validateInputs()){
+//   location.href = "home_page.html"
+//  }
+
+ form.addEventListener('submit', event => {
   event.preventDefault();
+
+  
  if(validateInputs()){
-  location.href = "home_page.html"
- }
+
+  popup.classList.add("open-popup");
+}
+
+//   else{
+//     function closePopup() {
+//       popup.classList.remove("open-popup");
+//       location.href = "home_page.html"
+//     }
+//  }
+
 });
 
 const setError = (element, message) => {
@@ -111,10 +130,6 @@ const validateInputs = () => {
 return status;
 
 };
-
-
-
-
 
 
 

@@ -112,7 +112,7 @@ nav .logo {
   border-radius: 100px;
   background-color: #692b54;
 }
-.logout,
+.home, .logout,
 .notifications {
   display: flex;
   align-items: center;
@@ -123,10 +123,10 @@ nav .logo {
 /* .logout p, .notifications p {
   display: none;
 } */
-.notifications {
+.home {
   margin-top: 100px;
 }
-.notifications:hover,
+.home:hover, .notifications:hover,
 .logout:hover {
   background-color: #fad2bc;
   color: #692b54;
@@ -184,6 +184,10 @@ nav .logo {
   align-items: center;
   gap: 20px;
 }
+.videoSection a {
+  text-decoration: none;
+  color: #692b54;
+}
 .videoCard {
   box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.08);
   aspect-ratio: 1/1;
@@ -204,8 +208,7 @@ nav .logo {
   opacity: 0.7;
   transform: scale(1.05);
 }
-.videoTitle a {
-  text-decoration: none;
+.videoTitle {
   color: #692b54;
   text-align: center;
   font-weight: 600;
@@ -213,7 +216,7 @@ nav .logo {
   overflow: hidden;
 }
 
-.copyright {
+/* .copyright {
   width: 100%;
   padding: 10px 0;
   font-size: 12px;
@@ -221,7 +224,7 @@ nav .logo {
   color: #692b54;
   border-top: 2px solid;
   border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
-}
+} */
 
 /*  ======== Media query======== */
 
@@ -245,7 +248,7 @@ nav .logo {
     gap: 5px;
     text-align: center;
   }
-  .videoTitle a {
+  .videoTitle {
     font-size: 14px;
   }
 }
@@ -260,7 +263,7 @@ nav .logo {
   .navLinks .profile p {
     font-size: 12px;
   }
-  .logout,
+  .home, .logout,
   .notifications {
     font-size: 1.2em;
   }
@@ -270,7 +273,7 @@ nav .logo {
   nav .search-box {
     width: 300px;
   }
-  .videoTitle a {
+  .videoTitle {
     font-size: 12px;
   }
 }
@@ -302,7 +305,7 @@ nav .logo {
   .videoThumbnail {
     margin-bottom: 10px;
   }
-  .videoTitle a {
+  .videoTitle {
     font-size: 14px;
   }
 }
@@ -321,7 +324,7 @@ nav .logo {
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
   }
-  .videoTitle a {
+  .videoTitle {
     font-weight: 400;
   }
 }
@@ -351,6 +354,9 @@ nav .logo {
   .navLinks a {
     font-size: 12px;
   }
+  .home, .logout, .notifications {
+    font-size: 1.5em;
+}
 }
 
 @media screen and (max-width: 400px) {
@@ -367,10 +373,10 @@ nav .logo {
 
 @media screen and (max-width: 385px) {
   .navLinks {
-    width: 100%;
+    width: 80%;
   }
   .navLinks.responsive {
-    width: 100%;
+    width: 80%;
   }
   .navLinks .icon {
     margin-right: 7%;
@@ -390,7 +396,7 @@ nav .logo {
   .videoHeader h2 {
     font-size: 18px;
   }
-  .videoTitle a {
+  .videoTitle {
     font-size: 10px;
   }
 }
@@ -403,13 +409,19 @@ nav .logo {
   .navLinks .icon {
     margin-top: 22px;
   }
+  .navLinks {
+    width: 80%;
+  }
+  .navLinks.responsive {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 291px) {
   .videoComponent {
     padding: 0px 10px 20px;
   }
-  .videoTitle a {
+  .videoTitle {
     font-size: 7px;
   }
 }

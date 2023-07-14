@@ -75,7 +75,7 @@ nav .logo {
   border-radius: 100px;
   background-color: #692b54;
 }
-.logout,
+.home, .logout,
 .notifications {
   display: flex;
   align-items: center;
@@ -83,10 +83,10 @@ nav .logo {
   padding: 10px 20px;
   font-size: 1.3em;
 }
-.notifications {
+.home {
   margin-top: 100px;
 }
-.notifications:hover,
+.home:hover, .notifications:hover,
 .logout:hover {
   background-color: #fad2bc;
   color: #692b54;
@@ -306,9 +306,9 @@ nav .logo {
   .navLinks .profile p {
     font-size: 12px;
   }
-  .logout,
+  .home, .logout,
   .notifications {
-    font-size: 1.2em;
+    font-size: 1.3em;
   }
 }
 
@@ -347,7 +347,7 @@ nav .logo {
     font-size: 12px;
     padding: 12px;
   }
-  .notifications {
+  .home {
     margin-top: 70px;
   }
 }
@@ -376,6 +376,10 @@ nav .logo {
   }
   .navLinks a {
     font-size: 12px;
+  }
+  .home, .logout,
+  .notifications {
+    font-size: 1.5em;
   }
   .back-arrow {
     left: 2%;

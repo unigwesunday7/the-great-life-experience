@@ -79,7 +79,6 @@ nav .icon {
   z-index: 1;
   padding: 5px;
   overflow: hidden;
-  transition: 0.5s ease-in;
 }
 
 .social-media a:hover {
