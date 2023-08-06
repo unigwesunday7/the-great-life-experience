@@ -6,12 +6,12 @@ function userToggle() {
   } else {
     userProfile.className = "navLinks";
   }
-}
+};
 
 
 
 
-
+// =========== Description Dropdown(Accordion) ===============
 const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
 
 accordionItemHeaders.forEach(accordionItemHeader => {
@@ -36,3 +36,15 @@ accordionItemHeaders.forEach(accordionItemHeader => {
     
   });
 });
+
+
+
+// ========== Comment Section ===========
+const addComment = document.getElementById('addComment');
+const commentContainer = document.getElementById('commentContainer');
+const inputComment =document.getElementById('inputComment');
+
+addComment.addEventListener('click', function(){
+  let commentWrapper = document.createElement('div');
+  commentWrapper.classList.add('comment-wrapper')
+})

@@ -199,8 +199,9 @@ nav .logo {
 .reactions input {
   border: none;
   outline: none;
-  pointer-events: none;
-  width: 45px;
+  /* pointer-events: none; */
+  width: 55px;
+  background: none;
 }
 
 .comment-wrapper {
